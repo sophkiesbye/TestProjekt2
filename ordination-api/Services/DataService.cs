@@ -130,7 +130,8 @@ public class DataService
         return db.Laegemiddler.ToList();
     }
 
-    public PN OpretPN(int patientId, int laegemiddelId, double antal, DateTime startDato, DateTime slutDato) {
+    public PN OpretPN(int patientId, int laegemiddelId, double antal, DateTime startDato, DateTime slutDato)
+    {
         // TODO: Implement!
         return null!;
     }
