@@ -17,8 +17,11 @@ public class PN : Ordination {
     /// Returner false ellers og datoen givesDen ignoreres
     /// </summary>
     public bool givDosis(Dato givesDen) {
-        // TODO: Implement!
-        return false;
+	    if (givesDen.dato >= startDen && givesDen.dato <= slutDen) { //tjekker om givesDen.dato er indenfor periode
+		    dates.Add(givesDen); //givesDen tilføjes til dates
+		    return true;
+	    }
+	    return false;
     }
 
     public override double doegnDosis() {
